@@ -1,14 +1,372 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Persian Cruella</title>
-</head>
-<body>
-  <h1>Hello! 👋  
-My personal Website is just getting started 🚀  
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amirmahdi | Content Specialist & Technical Writer</title>
+    <meta name="description" content="Content specialist & technical writer. SEO, cloud & DevOps docs. Portfolio, blog, and contact." />
 
-Here I’ll be sharing insights and experiences about **cybersecurity, networking, and cloud computing**.  
-Stay tuned for upcoming posts ✨</h1>
-</body>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amirmahdi | Content Specialist & Technical Writer" />
+    <meta property="og:description" content="SEO-driven content, technical documentation, and cloud/DevOps writing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/" />
+    <meta property="og:image" content="/images/og.jpg" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: {
+                500: '#00e600',
+              },
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+      .typewriter {
+        overflow: hidden;
+        border-right: .15em solid #22ff22;
+        white-space: nowrap;
+        animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+      }
+      @keyframes typing { from { width: 0 } to { width: 100% } }
+      @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #22ff22 } }
+      .card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.35); }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.35); }
+      /* Tag chip styles */
+      .chip{ cursor:pointer; user-select:none; border:1px solid #262626; background:#0a0a0a; color:#d4d4d4; padding:.35rem .7rem; border-radius:.75rem; font-size:.8rem; }
+      .chip:hover{ background:#111111; }
+      .chip-active{ border-color:#22ff22; box-shadow:0 0 0 1px #22ff22 inset; color:#fff; }
+    </style>
+  </head>
+
+  <body class="bg-black text-neutral-200 selection:bg-accent-500/30 selection:text-white">
+    <!-- Top bar -->
+    <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/50 border-b border-neutral-800">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="font-mono text-accent-400">amirmahdi.dev</a>
+        <nav class="hidden sm:flex gap-6 text-sm">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#work" class="hover:text-white">Experience</a>
+          <a href="#writing" class="hover:text-white">Writing</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+        <a href="/resume.pdf" class="rounded-xl border border-accent-500/50 px-3 py-1 text-sm font-medium hover:bg-accent-500/10">Résumé</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="max-w-5xl mx-auto px-4 pt-16 pb-10">
+      <div>
+        <p class="font-mono text-accent-400">Hey, I'm</p>
+        <h1 class="mt-2 text-4xl md:text-5xl font-extrabold tracking-tight text-white">Amirmahdi Barj</h1>
+        <p class="mt-4 typewriter text-lg text-neutral-300">Content Specialist • Technical Writer • SEO</p>
+        <p class="mt-4 text-neutral-300 max-w-prose">I plan, write, and ship clear, search-smart content for cloud & DevOps products. Comfortable with Linux, docs tooling (Docusaurus), and managing writer workflows.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl bg-accent-600/20 border border-accent-600 px-4 py-2 font-medium hover:bg-accent-600/30">Contact me</a>
+          <a href="https://github.com/YOUR-USERNAME" target="_blank" class="inline-flex items-center gap-2 rounded-2xl border border-neutral-700 px-4 py-2 font-medium hover:bg-neutral-900">GitHub</a>
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="inline-flex items-center gap-2 rounded-2xl border border-neutral-700 px-4 py-2 font-medium hover:bg-neutral-900">LinkedIn</a>
+          <a href="https://t.me/YOUR-TELEGRAM" target="_blank" class="inline-flex items-center gap-2 rounded-2xl border border-neutral-700 px-4 py-2 font-medium hover:bg-neutral-900">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-5xl mx-auto px-4 py-12 border-t border-neutral-900">
+      <h2 class="text-2xl font-bold text-white">About</h2>
+      <p class="mt-4 max-w-3xl text-neutral-300">I'm a content specialist focused on technical documentation, SEO, and growth. I've led writers, built style guides, migrated docs to Docusaurus, and shipped articles that rank. I enjoy turning complex infra topics into friendly, accurate docs.</p>
+      <ul class="mt-4 grid sm:grid-cols-2 gap-2 text-neutral-300 list-disc list-inside">
+        <li>SEO research (Ahrefs, Semrush, Surfer)</li>
+        <li>Docs & tooling (Markdown, Docusaurus, Git)</li>
+        <li>Cloud & Linux familiarity</li>
+        <li>Editing, QA, and content ops</li>
+      </ul>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="max-w-5xl mx-auto px-4 py-12 border-t border-neutral-900">
+      <h2 class="text-2xl font-bold text-white">Experience</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <article class="card rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40">
+          <header class="flex items-center justify-between">
+            <h3 class="font-semibold text-white">Content Specialist · AbrArvan</h3>
+            <span class="text-xs text-neutral-400">2020 — Present</span>
+          </header>
+          <ul class="mt-3 space-y-2 text-neutral-300 text-sm">
+            <li>Planned and delivered SEO content for cloud & hosting topics.</li>
+            <li>Managed writers/freelancers; created style guides and QA checklists.</li>
+            <li>Migrated docs to Docusaurus; improved structure and navigation.</li>
+          </ul>
+        </article>
+        <article class="card rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40">
+          <header class="flex items-center justify-between">
+            <h3 class="font-semibold text-white">Freelance Technical Writer</h3>
+            <span class="text-xs text-neutral-400">2018 — 2020</span>
+          </header>
+          <ul class="mt-3 space-y-2 text-neutral-300 text-sm">
+            <li>Wrote documentation for dev tools & cloud services.</li>
+            <li>Collaborated with SMEs; simplified complex topics.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Writing / Blog -->
+    <section id="writing" class="max-w-5xl mx-auto px-4 py-12 border-t border-neutral-900">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <h2 class="text-2xl font-bold text-white">Writing</h2>
+        <div class="flex items-center gap-2">
+          <label class="sr-only" for="searchPosts">Search posts</label>
+          <input id="searchPosts" type="search" placeholder="Search posts…" class="rounded-xl bg-neutral-900 border border-neutral-800 px-3 py-2 text-sm outline-none focus:border-accent-500" />
+          <select id="sortPosts" class="rounded-xl bg-neutral-900 border border-neutral-800 px-3 py-2 text-sm outline-none focus:border-accent-500">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="shortest">Shortest read</option>
+            <option value="longest">Longest read</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tag filters (chips) -->
+      <div id="tagChips" class="mt-4 flex flex-wrap gap-2"></div>
+
+      <!-- Posts list -->
+      <div id="postsList" class="mt-6 grid gap-4 md:grid-cols-2"></div>
+
+      <!-- Pagination -->
+      <div class="mt-6 flex items-center justify-between">
+        <button id="prevPage" class="rounded-xl border border-neutral-800 px-3 py-2 text-sm hover:bg-neutral-900 disabled:opacity-40" disabled>Prev</button>
+        <div id="pageInfo" class="text-xs text-neutral-400"></div>
+        <button id="nextPage" class="rounded-xl border border-neutral-800 px-3 py-2 text-sm hover:bg-neutral-900 disabled:opacity-40" disabled>Next</button>
+      </div>
+
+      <!-- Inline data (replace with your real posts) -->
+      <script type="application/json" id="posts-data">{
+        "posts": [
+          {
+            "title": "How I structure cloud docs that scale",
+            "url": "/blog/cloud-docs-ia.html",
+            "excerpt": "A framework I use for planning, IA, and review cycles.",
+            "date": "2025-08-22",
+            "readTime": 5,
+            "tags": ["docs", "cloud", "IA"]
+          },
+          {
+            "title": "SEO for developer content without keyword stuffing",
+            "url": "/blog/seo-for-dev-content.html",
+            "excerpt": "Research tactics that respect the reader.",
+            "date": "2025-07-18",
+            "readTime": 7,
+            "tags": ["seo", "content"]
+          },
+          {
+            "title": "Migrating docs to Docusaurus: pitfalls & wins",
+            "url": "/blog/docusaurus-migration.html",
+            "excerpt": "Notes from a real migration: structure, redirects, and CI.",
+            "date": "2025-06-04",
+            "readTime": 8,
+            "tags": ["docusaurus", "docs", "devops"]
+          },
+          {
+            "title": "Linux basics every writer on a cloud team should know",
+            "url": "/blog/linux-basics-for-writers.html",
+            "excerpt": "File systems, SSH, and logs—explained simply.",
+            "date": "2025-04-11",
+            "readTime": 6,
+            "tags": ["linux", "cloud"]
+          }
+        ]
+      }</script>
+
+      <script>
+        // ---------- Blog list renderer ----------
+        (function(){
+          const PER_PAGE = 4; // adjust if needed
+          const $list = document.getElementById('postsList');
+          const $chips = document.getElementById('tagChips');
+          const $search = document.getElementById('searchPosts');
+          const $sort = document.getElementById('sortPosts');
+          const $prev = document.getElementById('prevPage');
+          const $next = document.getElementById('nextPage');
+          const $info = document.getElementById('pageInfo');
+
+          const raw = document.getElementById('posts-data').textContent;
+          const data = JSON.parse(raw);
+          let posts = data.posts.map(p => ({...p, dateObj: new Date(p.date)}));
+
+          // derive all tags
+          const allTags = Array.from(new Set(posts.flatMap(p => p.tags))).sort();
+
+          // state
+          let state = {
+            q: localStorage.getItem('ps_q') || '',
+            tag: localStorage.getItem('ps_tag') || 'all',
+            sort: localStorage.getItem('ps_sort') || 'newest',
+            page: 1
+          };
+
+          // init UI values
+          $search.value = state.q;
+          $sort.value = state.sort;
+
+          // render chips
+          function renderChips(){
+            const tags = ['all', ...allTags];
+            $chips.innerHTML = tags.map(t => `
+              <button data-tag="${t}"
+                class="chip ${state.tag===t? 'chip-active' : ''}">${t}</button>`
+            ).join('');
+          }
+
+          // filter, sort, paginate
+          function getFiltered(){
+            let res = posts.filter(p => {
+              const q = state.q.toLowerCase();
+              const matchQ = !q || p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q);
+              const matchTag = state.tag==='all' || p.tags.includes(state.tag);
+              return matchQ && matchTag;
+            });
+            switch(state.sort){
+              case 'newest': res.sort((a,b)=> b.dateObj - a.dateObj); break;
+              case 'oldest': res.sort((a,b)=> a.dateObj - b.dateObj); break;
+              case 'shortest': res.sort((a,b)=> a.readTime - b.readTime); break;
+              case 'longest': res.sort((a,b)=> b.readTime - a.readTime); break;
+            }
+            return res;
+          }
+
+          function render(){
+            const list = getFiltered();
+            const total = list.length;
+            const pages = Math.max(1, Math.ceil(total / PER_PAGE));
+            state.page = Math.min(state.page, pages);
+            const start = (state.page - 1) * PER_PAGE;
+            const pageList = list.slice(start, start + PER_PAGE);
+
+            $list.innerHTML = pageList.map(p => `
+              <a class="card block rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40 hover:bg-neutral-900" href="${p.url}" target="_blank" rel="noopener">
+                <h3 class="font-semibold text-white">${p.title}</h3>
+                <p class="mt-2 text-sm text-neutral-300">${p.excerpt}</p>
+                <div class="mt-3 flex items-center gap-3 text-xs text-neutral-400">
+                  <span>${p.date}</span>
+                  <span>•</span>
+                  <span>${p.readTime} min read</span>
+                  <span class="hidden sm:inline">•</span>
+                  <span class="hidden sm:inline">${p.tags.map(t=>`#${t}`).join(' ')}</span>
+                </div>
+              </a>
+            `).join('');
+
+            $prev.disabled = state.page <= 1;
+            $next.disabled = state.page >= pages;
+            $info.textContent = `${total||0} post${total===1?'':'s'} • Page ${state.page}/${pages}`;
+          }
+
+          // events
+          $chips.addEventListener('click', (e)=>{
+            const t = e.target.closest('[data-tag]');
+            if(!t) return;
+            state.tag = t.getAttribute('data-tag');
+            state.page = 1;
+            localStorage.setItem('ps_tag', state.tag);
+            renderChips();
+            render();
+          });
+
+          $search.addEventListener('input', ()=>{
+            state.q = $search.value.trim();
+            state.page = 1;
+            localStorage.setItem('ps_q', state.q);
+            render();
+          });
+
+          $sort.addEventListener('change', ()=>{
+            state.sort = $sort.value;
+            state.page = 1;
+            localStorage.setItem('ps_sort', state.sort);
+            render();
+          });
+
+          $prev.addEventListener('click', ()=>{ state.page = Math.max(1, state.page-1); render(); });
+          $next.addEventListener('click', ()=>{ state.page = state.page+1; render(); });
+
+          // first paint
+          renderChips();
+          render();
+        })();
+      </script>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-5xl mx-auto px-4 py-12 border-t border-neutral-900">
+      <h2 class="text-2xl font-bold text-white">Projects</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <article class="card rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40">
+          <header class="flex items-center justify-between">
+            <h3 class="font-semibold text-white">Docs Migration → Docusaurus</h3>
+            <a href="#" class="text-xs text-accent-400 hover:text-accent-300" target="_blank">View</a>
+          </header>
+          <p class="mt-2 text-sm text-neutral-300">Information architecture, content pruning, and build pipeline.</p>
+        </article>
+        <article class="card rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40">
+          <header class="flex items-center justify-between">
+            <h3 class="font-semibold text-white">Cloud Docs Style Guide</h3>
+            <a href="#" class="text-xs text-accent-400 hover:text-accent-300" target="_blank">View</a>
+          </header>
+          <p class="mt-2 text-sm text-neutral-300">Tone, terminology, and review process to keep docs consistent.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-5xl mx-auto px-4 py-12 border-t border-neutral-900">
+      <h2 class="text-2xl font-bold text-white">Contact</h2>
+      <p class="mt-4 text-neutral-300">Open to on-site roles in Tehran. For collaborations or roles, email <a href="mailto:you@example.com" class="text-accent-400 hover:text-accent-300">you@example.com</a> or DM me on Telegram.</p>
+      <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST" class="mt-6 grid gap-3 max-w-xl">
+        <input type="text" name="name" placeholder="Your name" required class="rounded-xl bg-neutral-900 border border-neutral-800 px-4 py-3 outline-none focus:border-accent-500" />
+        <input type="email" name="email" placeholder="Email" required class="rounded-xl bg-neutral-900 border border-neutral-800 px-4 py-3 outline-none focus:border-accent-500" />
+        <textarea name="message" rows="5" placeholder="Message" required class="rounded-xl bg-neutral-900 border border-neutral-800 px-4 py-3 outline-none focus:border-accent-500"></textarea>
+        <button class="rounded-2xl bg-accent-600 px-5 py-3 font-semibold text-black hover:bg-accent-500">Send</button>
+      </form>
+    </section>
+
+    <footer class="border-t border-neutral-900">
+      <div class="max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-neutral-400">© <span id="y"></span> Amirmahdi Barj</p>
+        <div class="text-xs text-neutral-500">Built with <span class="text-accent-400">Tailwind</span> · Hosted on GitHub Pages</div>
+      </div>
+    </footer>
+
+    <!-- Blog Loader Script -->
+    <script>
+      const posts = [
+        { title: "How I structure cloud docs that scale", desc: "Framework for planning, IA, and review cycles.", url: "#", read: "5 min read" },
+        { title: "SEO for developer content without keyword stuffing", desc: "Research tactics that respect the reader.", url: "#", read: "7 min read" },
+        { title: "Migrating docs to Docusaurus", desc: "A real-world case study of migration.", url: "#", read: "6 min read" }
+      ];
+
+      document.getElementById('loadPosts').addEventListener('click', () => {
+        const container = document.getElementById('postList');
+        container.innerHTML = '';
+        posts.forEach(p => {
+          const el = document.createElement('a');
+          el.href = p.url;
+          el.target = "_blank";
+          el.className = "card block rounded-2xl border border-neutral-800 p-5 bg-neutral-900/40 hover:bg-neutral-900";
+          el.innerHTML = `<h3 class="font-semibold text-white">${p.title}</h3><p class="mt-2 text-sm text-neutral-300">${p.desc}</p><span class="mt-3 inline-block text-xs text-neutral-400">${p.read}</span>`;
+          container.appendChild(el);
+        });
+      });
+
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
- 
